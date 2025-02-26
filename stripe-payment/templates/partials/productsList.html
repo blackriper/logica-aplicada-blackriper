@@ -1,0 +1,15 @@
+{{range .products}}
+<div class="bg-white rounded-lg shadow-md p-4">
+  <img src="{{.ImageUrl}}" alt="{{.Name}}" class="w-32 h-32 object-cover mb-2">
+  <h3 class="text-lg font-semibold"> {{.Name}}</h3>
+  <p class="text-sm text-blue-300"> sku: {{.ID}}</p>
+  <p class="text-gray-600">{{.Price}} </p>
+  <button hx-get="/checkout/{{.PriceId}}?prodId={{.ID}}" hx-push-url="true" hx-target="body"
+    class="bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 w-1/2 rounded flex items-center mt-4">
+    <span class="material-symbols-outlined">
+      shopping_bag
+    </span>
+    <span class="ml-2">Comprar</span>
+  </button>
+</div>
+{{end}}

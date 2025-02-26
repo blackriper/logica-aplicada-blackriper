@@ -1,0 +1,19 @@
+{{template "layout.html" .}}
+
+<body>
+  <div class="bg-gray-50">
+    <div class="max-w-2xl mx-auto py-12 px-4">
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+        <svg class="h-16 w-16 text-green-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+        <h2 class="text-2xl font-bold mb-4">¡Pago exitoso!</h2>
+        <h4 class="font-bold">Folio: {{.PaymentId}} </h4>
+        <p class="mb-6">Tu compra por {{.Amount}} se ha completado correctamente </p>
+        <a href="/" class="text-indigo-600 hover:text-indigo-800">
+          Volver a la tienda
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
