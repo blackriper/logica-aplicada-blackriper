@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "@webview/webview": "jsr:@webview/webview@^0.9.0"
-  }
-}
